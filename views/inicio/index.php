@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titulo; ?></title>
-    <link rel="stylesheet" href="/build/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="/public/build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/build/css/app.css">
     <script src="https://kit.fontawesome.com/013f3a478a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,7 +23,7 @@
                 <ul class="navbar-nav d-flex align-items-center">
                     <li class="nav-item">
                         <div class="d-flex flex-row">
-                            <img src="build/img/default.png" class="rounded-circle" width="30">
+                            <img src="/public/build/img/default.png" class="rounded-circle" width="30">
                         </div>
                     </li>
                     <li class="nav-item">
@@ -44,7 +44,7 @@
             <div class="container-fluid">
                 <div class="row p-2 pt-3 pb-3 d-flex align-items-center">
                     <div class="col-md-2">
-                        <img class="d-none d-md-flex" src="/build/img/glzcbd.png" width="100">
+                        <img class="d-none d-md-flex" src="/public/build/img/glzcbd.png" width="100">
                     </div>
                     <div class="col-md-8">
                         <div class="d-flex form-inputs align-items-center">
@@ -97,9 +97,9 @@
                     <?php foreach ($destacados as $index => $destacado) : ?>
                         <div class="carousel-item <?php echo ($index === 0) ? 'active' : ''; ?>">
                             <picture>
-                                <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $destacado->imagen; ?>.webp" type="image/webp">
-                                <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $destacado->imagen; ?>.jpg" type="image/jpeg">
-                                <img class="d-block w-100 i800x600" src="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $destacado->imagen . '.webp'; ?>">
+                                <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $destacado->imagen; ?>.webp" type="image/webp">
+                                <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $destacado->imagen; ?>.jpg" type="image/jpeg">
+                                <img class="d-block w-100 i800x600" src="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $destacado->imagen . '.webp'; ?>">
                             </picture>
                             <div class="carousel-caption text-outline">
                                 <h5><?php echo $destacado->titulo; ?></h5>
@@ -128,9 +128,9 @@
                             <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal<?php echo $producto->id; ?>">
 
                                 <picture>
-                                    <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen; ?>.webp" type="image/webp">
-                                    <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen; ?>.jpg" type="image/jpeg">
-                                    <img src="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen . '.webp'; ?>" alt="Imagen de <?php echo htmlspecialchars($producto->titulo); ?>" class="card-img-top">
+                                    <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen; ?>.webp" type="image/webp">
+                                    <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen; ?>.jpg" type="image/jpeg">
+                                    <img src="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen . '.webp'; ?>" alt="Imagen de <?php echo htmlspecialchars($producto->titulo); ?>" class="card-img-top">
                                 </picture>
                                 <div class="card-body">
                                     <h5 class="card-title"><?php echo $producto->titulo; ?></h5>
@@ -154,9 +154,9 @@
                                     </div>
                                     <div class="modal-body">
                                         <picture>
-                                            <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen; ?>.webp" type="image/webp">
-                                            <source srcset="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen; ?>.jpg" type="image/jpeg">
-                                            <img class="i150" src="<?php echo $_ENV['HOST'] . '/build/img/productos/' . $producto->imagen . '.webp'; ?>" alt="Imagen de <?php echo htmlspecialchars($producto->titulo); ?>">
+                                            <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen; ?>.webp" type="image/webp">
+                                            <source srcset="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen; ?>.jpg" type="image/jpeg">
+                                            <img class="i150" src="<?php echo $_ENV['HOST'] . '/public/build/img/productos/' . $producto->imagen . '.webp'; ?>" alt="Imagen de <?php echo htmlspecialchars($producto->titulo); ?>">
                                         </picture>
                                         <p><?php echo $producto->descripcion; ?></p>
                                         <p>Precio: <?php echo $producto->precio; ?> €</p>
@@ -210,7 +210,7 @@
         </div>
     </footer>
 
-    <script src="/build/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/build/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

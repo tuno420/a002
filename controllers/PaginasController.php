@@ -24,7 +24,7 @@ class PaginasController
         }
 
         $router->render('inicio/index', [
-            'titulo' => 'Tienda CBD | Inicio',
+            'titulo' => 'GLZ CBD| Inicio',
             'categorias' => $categorias,
             'productos_categoria' => $productos_categoria,
             'destacados' => $destacados
@@ -41,19 +41,19 @@ class PaginasController
     public static function legal(Router $router)
     {
         $router->render('inicio/legal', [
-            'titulo' => 'Tienda CBD | Legal'
+            'titulo' => 'GLZ CBD | Legal'
         ]);
     }
 
     public static function catalog(Router $router) {
         $router->render('catalogo/index', [
-            'titulo' => 'Tienda CBD | Catalog'
+            'titulo' => 'GLZ CBD | Catalog'
         ]);
     }
 
     public static function contact(Router $router) {
         $router->render('inicio/contacto', [
-            'titulo' => 'Tienda CBD | Contact'
+            'titulo' => 'GLZ CBD | Contact'
         ]);
     }
 

@@ -92,7 +92,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col-md-12">
-                    <p class="m-0">&copy; 2024 Tienda CBD. Todos los derechos reservados.</p>
+                    <p class="m-0">&copy; 2024 GLZ CBD. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>

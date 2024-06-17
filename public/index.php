@@ -1,5 +1,7 @@
 <?php
-require_once __DIR__ . '/../includes/app.php';
+// Comentado pa que funcione en server
+// require_once __DIR__ . '/../includes/app.php';
+require_once __DIR__ . '/includes/app.php';
 
 use MVC\Router;
 use Controllers\AdminController;
@@ -13,7 +15,6 @@ $router = new Router();
 // Inicio
 $router->get('/', [PaginasController::class, 'index']);
 $router->post('/', [PaginasController::class, 'index']);
-
 
 $router->get('/productos', [PaginasController::class, 'productos']);
 $router->post('/productos', [PaginasController::class, 'productos']);
